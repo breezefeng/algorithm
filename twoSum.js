@@ -11,4 +11,4 @@ function twoSum(arr) {
   return cnt;
 }
 
-console.log(twoSum([1,2,3,4,-9,-8,-6,5,6,-3, -3,-6]))
+// console.log(twoSum([1,2,3,4,-9,-8,-6,5,6,-3, -3,-6]))

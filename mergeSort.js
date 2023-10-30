@@ -24,4 +24,14 @@ const mergeSort = (arr, lo, hi) => {
   return arr
 }
 
-console.log(mergeSort([9, 8, 7, 5, 6, 2, 12, 1], 0, 7))
+const mergeSortBU = arr => {
+  const len = arr.length
+  for (let sz = 1; sz < len; sz = sz + sz) {
+    for (let lo = 0; lo < len - sz; lo += sz + sz) {
+      merge(arr, lo, lo + sz - 1, Math.min(lo + sz + sz - 1, len - 1))
+    }
+  }
+  return arr
+}
+
+console.log(mergeSortBU([9, 8, 7, 5, 6, 2, 12, 1], 0, 7))

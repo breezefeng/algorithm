@@ -6,10 +6,8 @@ function threeSum(arr) {
   let cnt = 0;
   for (let i = 0; i < len; i++) {
     for (let j = i + 1; j < len; j++) {
-      if (binarySearch(-arr[i]-arr[j], arr) > j) {
+      if (binarySearch(-arr[i]-arr[j], arr) > j) 
         cnt++
-        console.log(arr[i], arr[j])
-      }
     }
   }
   return cnt;

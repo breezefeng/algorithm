@@ -12,6 +12,7 @@ const merge = (arr, lo, mid, hi) => {
   return arr
 }
 
+// 自顶向下
 const mergeSort = (arr, lo, hi) => {
   if (hi <= lo) return
   const mid = Math.floor(lo + (hi - lo) / 2)
@@ -24,6 +25,7 @@ const mergeSort = (arr, lo, hi) => {
   return arr
 }
 
+// 自底向上
 const mergeSortBU = arr => {
   const len = arr.length
   for (let sz = 1; sz < len; sz = sz + sz) {
